@@ -1,0 +1,193 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-11T00:03:04.218Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7723502000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaProdutoSteps.inicio()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Consultar produto com sucesso",
+        "description": "",
+        "id": "consultar-produto;consultar-produto-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 2361883700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaProdutoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 43500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaProdutoSteps.fecharBrownser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 5161697400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "que acesso a pagina principal",
+            "match": {
+              "location": "ConsultaProdutoSteps.que_acesso_a_pagina_principal()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2896911100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "pesquiso o produto \"Notebook Inspiron i15-3583-A30P\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Notebook Inspiron i15-3583-A30P\"",
+                  "offset": 19
+                }
+              ],
+              "location": "ConsultaProdutoSteps.pesquiso_o_produto(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 1174148300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "devo visualizar lista do produto",
+            "match": {
+              "location": "ConsultaProdutoSteps.devo_visualizar_lista_do_produto()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-07-11T00:03:23.583Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5654036000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaProdutoSteps.inicio()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Adicionar produto no carrinho com sucesso",
+        "description": "",
+        "id": "consultar-produto;adicionar-produto-no-carrinho-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 1530227100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaProdutoSteps.screenshot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 97700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultaProdutoSteps.fecharBrownser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 6843803300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "que acesso a pagina principal",
+            "match": {
+              "location": "ConsultaProdutoSteps.que_acesso_a_pagina_principal()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 2319501200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "pesquiso o produto \"Notebook Inspiron i15-3583-A30P\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Notebook Inspiron i15-3583-A30P\"",
+                  "offset": 19
+                }
+              ],
+              "location": "ConsultaProdutoSteps.pesquiso_o_produto(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 12498420000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "adiciono o produto ao carrinho",
+            "match": {
+              "location": "ConsultaProdutoSteps.adiciono_o_produto_ao_carrinho()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 3547001900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "devo visualizar produto adicionado",
+            "match": {
+              "location": "ConsultaProdutoSteps.devo_visualizar_produto_adicionado()"
+            },
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Consultar Produto",
+    "description": "  Realizar consulta de produtos na loja Americanas",
+    "id": "consultar-produto",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/consulta_produto.feature",
+    "tags": []
+  }
+]
