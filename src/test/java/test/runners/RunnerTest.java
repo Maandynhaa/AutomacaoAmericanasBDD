@@ -18,5 +18,5 @@ dryRun = false,
 strict = false
 )
 public class RunnerTest {
-	
+
 }

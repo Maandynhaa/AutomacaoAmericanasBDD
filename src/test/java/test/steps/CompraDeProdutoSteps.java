@@ -51,6 +51,14 @@ public class CompraDeProdutoSteps {
 		assertEquals("notebook inspiron i15-3583-a30p", validar.getText());
 	}
 
+	@Entao("devo visualizar mensagem de produto não encontrado")
+	public void devo_visualizar_mensagem_de_produto_não_encontrado() {
+		WebElement validar = driver.findElement(By.className("goIRTq"));
+		boolean msg = driver.getPageSource().contains("nenhum resultado encontrado");
+		assertEquals("Ops!", validar.getText());
+		assertTrue(msg);
+	}
+
 	@Quando("adiciono o produto ao carrinho")
 	public void adiciono_o_produto_ao_carrinho() {
 		driver.findElement(By.className("gYIWNc")).click();
