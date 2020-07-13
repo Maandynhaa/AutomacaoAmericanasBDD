@@ -51,12 +51,12 @@ public class CompraDeProdutoSteps {
 		assertEquals("notebook inspiron i15-3583-a30p", validar.getText());
 	}
 
-	@Entao("devo visualizar mensagem de produto não encontrado")
-	public void devo_visualizar_mensagem_de_produto_não_encontrado() {
+	@Entao("devo visualizar mensagem {string}")
+	public void devoVisualizarMensagem(String mensagem) {
 		WebElement validar = driver.findElement(By.className("goIRTq"));
-		boolean msg = driver.getPageSource().contains("nenhum resultado encontrado");
+		boolean validarMsg = driver.getPageSource().contains(mensagem);
 		assertEquals("Ops!", validar.getText());
-		assertTrue(msg);
+		assertTrue(validarMsg);
 	}
 
 	@Quando("adiciono o produto ao carrinho")

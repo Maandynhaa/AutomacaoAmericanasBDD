@@ -10,10 +10,10 @@ Cenario: Consultar produto com sucesso
  Quando pesquiso o produto "Notebook Inspiron i15-3583-A30P"
  Entao devo visualizar lista do produto
 	
-Cenario: Consultar produto com dados inválidos
+Cenario: Consultar produto com dados invalidos
  Dado que acesso a pagina principal
  Quando pesquiso o produto "iopa"
- Entao devo visualizar mensagem de produto não encontrado
+ Entao devo visualizar mensagem "nenhum resultado encontrado"
 
 Cenario: Adicionar produto no carrinho com sucesso
  Dado que acesso a pagina principal
